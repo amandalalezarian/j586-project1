@@ -1,0 +1,344 @@
+* {
+  font-family: Myriad Pro;
+  }
+
+.blue-border{
+  border: 1px solid blue;
+  min-height: 600px;
+}
+
+.border{
+  border: 1px solid black;
+}
+
+.top-mini {
+  display: inline;
+}
+
+/*not workng*/
+.top-header {
+  background-image: url(images/dashboard/top-header);
+  background-repeat: repeat-x;
+}
+
+.row-top {
+  height:2em;
+  background: #2191ea;
+}
+
+.col-centered{
+    max-width:500px;
+    margin: 0 auto;
+}
+
+/*this isn't changing anything*/
+.dashboard-icons {
+
+    border:1px solid red;
+  /*display: inline-block;*/
+}
+
+.row-navigation {
+  height: 7em;
+  background: green;
+
+  margin-bottom: 15px;
+}
+
+.container-unit {
+  border: 1px solid black;
+}
+
+/*Dashboard*/
+#gradient {
+    height: 200px;
+    width: 103.5%;
+    padding-top: 12px;
+    background: -webkit-linear-gradient(#f6f6f6, white); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#f6f6f6, white); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#f6f6f6, white); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#f6f6f6, white); /* Standard syntax (must be last) */
+    border-radius: 5px;
+    margin-left: -15px;
+}
+
+#content {
+  width: 95%;
+  margin-left: 24px;
+}
+
+.search-bar {
+  margin-top: 15px;
+  margin-left: -120px;
+  width: 250px;
+  height: 50px;
+  position: relative;
+}
+
+.search {
+  margin-top: -85px;
+  margin-left: 90px;
+  position: relative;
+}
+
+.dashboard {
+  background: #33cc66;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.titles {
+  color: #2498f4;
+}
+
+.announcements {
+  background-color: white;
+  padding-top: 15px;
+  border: 1px solid #e9e9e9;
+}
+
+.announcements-middle {
+  border-left: 1px solid #e9e9e9;
+  border-right: 1px solid #e9e9e9;
+
+}
+
+/* Tasks */
+.tasks {
+  background: white;
+  border-left: 1px solid #e9e9e9;
+}
+
+.tasks-border {
+  border-bottom: 1px solid #e9e9e9;
+  padding-top: -15px;
+  padding-bottom: -15px;
+}
+
+/*hover*/
+a:link {
+	color: #cccccc;
+	text-decoration: none;
+}
+
+a:active {
+	color: #cccccc;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #cccccc;
+	background-color: #cccccc;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #cccccc;
+	text-decoration: none;
+}
+
+.list-group-item {
+    width: 100%;
+    border: none;
+    background: none;
+    float: left;
+    line-height: 30px;
+}
+
+.bullets {
+    list-style-type: none;
+}
+
+.tasks-bullets {
+  margin-left: -20px;
+}
+
+.badge {
+  float: left;
+  margin-right: 10px;
+  background-color: #32cc66;
+}
+
+.small-contacts {
+  border: 1px solid black;
+  border-radius: 5px;
+  float: right;
+}
+
+.small-contacts-align {
+  margin-right: 3px;
+}
+
+.tasks-text {
+  font-size: 18px;
+}
+
+/*Recommendations*/
+.mini-text {
+  font-size: 8px;
+  padding: 2px;
+}
+
+.recommendations-text {
+  margin-top: -5px;
+  line-height: 17px;
+}
+
+.recommendations-image {
+  float:left;
+  margin-right: 5px;
+}
+
+.recommendations-unit {
+  margin-bottom: -4px;
+}
+
+.recommendations-bullets {
+  margin-left: -46px;
+}
+
+.recommendations-unit-checklist {
+  padding-top: 5px;
+}
+
+/* Analytics */
+.dropdown {
+  margin-left: -50px;
+}
+
+.fa-chevron-down {
+  color: #fe7f13;
+}
+
+.social-media-checkboxes {
+  border: none;
+  border-radius: 5px;
+  padding-left: 5px;
+  margin-bottom: 55px;
+  width: 80px;
+  display: inline-block;
+  color: white;
+}
+
+.graph-line {
+  border-right: 1px solid #e9e9e9;
+}
+
+.social-line {
+  border-bottom: 1px solid #e9e9e9;
+}
+
+.pie {
+  padding-left: 25px;
+}
+
+.facebook {
+  background-color: #114570;
+}
+
+.twitter {
+  background-color: #2298f4;
+}
+
+.foursquare {
+  background-color: #3a599b;
+}
+
+.google {
+  background-color: #31cc66;
+}
+
+.checkbox {
+  display: inline;
+}
+
+.analytics {
+  background: white;
+  border-right: 1px solid #e9e9e9;
+  border-left: 1px solid #e9e9e9;
+}
+
+/* 75 Contacts */
+.contacts-customers-line {
+  border-bottom: 1px solid #e9e9e9;
+}
+
+.contacts-box-unit {
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 200px;
+  height: 200px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.ribbon-left {
+  position: absolute;
+  top: 2px;
+  left: -18px;
+}
+.ribbon-right {
+  position: absolute;
+  top: 2px;
+  right: -19px;
+}
+
+.contacts-box {
+  border: 1px solid black;
+  background-color: #2394ee;
+  width: 200px;
+  height: 50px;
+  top: 75px;
+  position: absolute;
+}
+
+.contacts-green {
+  position: absolute;
+  top: -105px;
+  right: 60px;
+}
+
+.chart-green {
+  position: absolute;
+  top: 2em;
+  left: 0px;
+}
+
+/* Did you know? */
+.know-box {
+  margin-top: 10px;
+  border-radius: 5px;
+  background-color: #2394ee;
+  margin-left: 2px;
+  padding-top: 15px;
+  width: 100%;
+  height: 100px;
+  color: white;
+}
+
+.know-arrow-left {
+  margin-left: -30px;
+}
+
+.know-arrow-right {
+  margin-left: 38px;
+  margin-bottom: 45px;
+}
+
+/*Ads*/
+.ads-box {
+  border: 1px solid black;
+  background-color: #2394ee;
+  padding-top: 15px;
+  padding-bottom: 25px;
+  margin-bottom: 45px;
+}
+
+/*Footer*/
+.glyphicon-menu-up {
+  color: #2394ee;
+}
+
+.footer {
+  background: white;
+}
