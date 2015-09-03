@@ -19,13 +19,14 @@
     <![endif]-->
   </head>
   <body>
+    <div class="page-wrap">
     <!-- This is top fluid -->
-    <div class="row-top row top-header">
+    <div class="row top-header">
         <div class="container">
-          <div class="col-md-9">
+          <div class="col-md-9 hidden-sm hidden-xs">
             <h4> <font color="white"> social stream </font> </h4>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3 mini-of-raleigh">
             <h4 class="top-mini"> <font color="white"> MINI of Raleigh </font> </h4>
             <img src="images/dashboard/help.png">
             <img src="images/dashboard/settings.png">
@@ -34,38 +35,68 @@
     </div>
 
     <!-- This is top navigation -->
+    <div class="desktop-nav hidden-sm hidden-xs">
     <div class="row-navigation">
     <!--what
       <img src="images/dashboard/bitmap.png">
       <img src="images/dashboard/shade.png">
-      <div img src="images/dashboard/pattern-fill-1.png">
-      <img src="images/dashboard/fade-left.png">
-      <img src="images/dashboard/fade-right.png">
+      <img src="images/dashboard/pattern-fill-1.png">
     -->
         <div class="row">
-        <div class="col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1 ">
+          <img class="fade-left" src="images/dashboard/fade-left.png">
+          <img class="pattern-fill" src="images/dashboard/pattern-fill-1.png">
+          <div class="col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1 ">
           <div class="dashboard-icons col-centered">
+          <img class="bitmap" src="images/dashboard/bitmap.png">
+          <!--hover doesn't work now -->
           <img src="images/dashboard/dashboard-green.png" onmouseover="this.src='images/dashboard/dashboard-blue.png'" onmouseout="this.src='images/dashboard/dashboard-green.png'">
           <img src="images/dashboard/customers-green.png" onmouseover="this.src='images/dashboard/customers-blue.png'" onmouseout="this.src='images/dashboard/customers-green.png'">
           <img src="images/dashboard/messages-green.png" onmouseover="this.src='images/dashboard/messages-blue.png'" onmouseout="this.src='images/dashboard/messages-green.png'">
           <img src="images/dashboard/promotions-green.png" onmouseover="this.src='images/dashboard/promotions-blue.png'" onmouseout="this.src='images/dashboard/promotions-green.png'">
           <img src="images/dashboard/page-creator-green.png" onmouseover="this.src='images/dashboard/page-creator-blue.png'" onmouseout="this.src='images/dashboard/page-creator-green.png'">
           <img src="images/dashboard/analytics-green.png" onmouseover="this.src='images/dashboard/analytics-blue.png'" onmouseout="this.src='images/dashboard/analytics-green.png'">
+          <img class="arrow" src="images/dashboard/arrow.png">
         </div>
       </div>
         <div class="col-md-2">
         </div>
+        <img class="fade-right" src="images/dashboard/fade-right.png">
       </div>
   </div>
+  </div>
+    <div class="mobile-nav hidden-lg hidden-md">
+      <div id="custom-bootstrap-menu" class="navbar navbar-default " role="navigation">
+    <div class="container-fluid">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+            </button>
+        <div class="collapse navbar-collapse navbar-menubuilder">
+            <ul class="nav navbar-nav navbar-left">
+                <li><a href="/">Dashboard</a>
+                </li>
+                <li><a href="/products">Customers</a>
+                </li>
+                <li><a href="/about-us">Messages</a>
+                </li>
+                <li><a href="/contact">Promotions</a>
+                </li>
+                <li><a href="/contact">Page Creator</a>
+                </li>
+                <li><a href="/contact">Analytics</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+</div>
 
     <!-- This is Dashboard -->
     <div class="container">
       <div class="row dashboard">
-        <div class="col-md-10">
+        <div class="col-md-10 col-sm-4">
           <h1> <font color="white"> Dashboard </font> </h1>
         </div>
       <!-- This is search bar -->
-        <div class="col-md-2">
+        <div class="col-md-2 col-sm-8 hidden-xs">
           <div class="search-bar">
             <input class="form-control">
           </div>
@@ -95,25 +126,46 @@
     <!-- Tasks -->
         <div class="tasks col-md-4">
           <div> <font color="2394ee">
-            <h1 class="titles">Tasks</h1>
-            <ul class="tasks-bullets bullets list-group-item">
-                <li class="tasks-text tasks-border"><a href="#">
-                  <span class="badge">1</span> Welcome Contacts
-                  <span class="small-contacts"> <img src="images/content/contacts-small-blue.png">32 </span>
-                </a></li>
-              <li class="tasks-text tasks-border">
-                <span class="badge">2</span> Provide Responses
-                <span class="small-contacts small-contacts-align"> <img src="images/content/contacts-small-blue.png">36 </span>
-              </li>
-              <li class="tasks-text tasks-border">
-                <span class="badge">3</span> Review Activity
-                <span class="small-contacts small-contacts-align"> <img src="images/content/contacts-small-blue.png">36 </span>
-              </li>
-              <li class="tasks-text tasks-border">
-                <span class="badge">4</span> Reach Out
-                <span class="small-contacts small-contacts-align"> <img src="images/content/contacts-small-blue.png">3 </span>
-              </li> </font>
-            </ul>
+            <span> <h1 class="titles">Tasks</h1> <img class="tasks-settings-icon" src="images/content/tasks-settings-icon.png"></span>
+            <div class="tasks-bullets bullets list-group-item">
+                <a href="#">
+                  <div class="tasks-text tasks-border">
+                    <span class="badge">1 </span> Welcome Contacts
+                    <span class="small-contacts"> <img src="images/content/contacts-small-blue.png">
+                    32
+                    </span>
+                  </div>
+                </a>
+
+                <a href="#">
+                  <div class="tasks-text tasks-border">
+                    <span class="badge">2 </span> Provide Responses
+                    <span class="small-contacts"> <img src="images/content/contacts-small-blue.png">
+                      36
+                    </span>
+                  </div>
+                </a>
+
+                <a href="#">
+                  <div class="tasks-text tasks-border">
+                    <span class="badge">3 </span> Review Activity
+                    <span class="small-contacts"> <img src="images/content/contacts-small-blue.png">
+                      36
+                    </span>
+                  </div>
+                </a>
+
+                <a href="#">
+                  <div class="tasks-text tasks-border">
+                    <span class="badge">4 </span> Reach Out
+                    <span class="small-contacts"> <img src="images/content/contacts-small-blue.png">
+                      3
+                    </span>
+                  </div>
+                </a>
+
+            </font>
+          </div>
           </font>
         </div>
           <!-- Recommendations -->
@@ -150,9 +202,9 @@
             <h1 class="titles"> Analytics </h1>
           <div class="row">
             <div class="col-md-6">
-              <p> <font color="77777"> Activity </font></p>
+              <p> <font color="77777"> ACTIVITY </font></p>
             </div>
-          <div class="col-md-6">
+          <div class="col-md-6 col-sm-3 col-xs-3">
             <div class="dropdown">
               <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                 06/28/11 - 07/21/11
@@ -169,9 +221,9 @@
               <img src="images/content/graph.png">
             </div>
             <div class="col-md-1 pie">
-              <font color="77777"> Channels </font>
+              <font color="77777"> CHANNELS </font>
                 <img src="images/content/pie-channels.png">
-              <font color="77777"> Referrals </font>
+              <font color="77777"> REFERRALS </font>
                 <img src="images/content/pie-referrals.png">
             </div>
           </div>
@@ -219,33 +271,39 @@
         <div class="col-md-1">
         </div>
       </div>
-    <!-- large contacts -->
+<!-- large contacts -->
             <div class="row contacts-customers-line">
-                <div class="col-md-6">
-                  <div class="contacts-box-unit">
-                    <div class="contacts-box">
-                      <ul class="bullets">
-                        <li>
-                          <p> 75 CONTACTS </p>
-                          <p> 4 INFLUENCERS </p>
-                        </li>
-                      </ul>
+            <!--Contacts-->
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                  <div class="contacts-box-unit"> <!-- whole box for person1-->
+                  <div class="contacts-box"> <!--banner / blue box-->
+                        <p class="banner-text-contacts"> 75 CONTACTS </p>
+                        <p class="banner-text-influencers"> 4 INFLUENCERS </p>
+                  </div>
                   <img class="contacts-green" src="images/content/contacts-green.png">
                   <img class="ribbon-left" src="images/content/ribbon-left.png">
                   <img class="chart-green" src="images/content/chart-green.png">
                   <img class="ribbon-right" src="images/content/ribbon-right.png">
                 </div>
               </div>
-            </div>
-
-                <div class="col-md-6">
-                  17 CUSTOMERS
+            <!--Customers-->
+              <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="contacts-box-unit"> <!-- whole box for person1-->
+                <div class="contacts-box"> <!--banner / blue box-->
+                      <p class="banner-text-customers"> 17 CUSTOMERS </p>
+                      <p class="banner-text-influencers-2"> 0 INFLUENCERS </p>
                 </div>
+                <img class="customers-orange" src="images/content/customers-orange.png">
+                <img class="ribbon-left-2" src="images/content/ribbon-left-2.png">
+                <img class="chart-orange" src="images/content/chart-orange.png">
+                <img class="ribbon-right-2" src="images/content/ribbon-right-2.png">
+              </div>
+            </div>
             </div>
 
 <!-- Did you know? -->
         <div class="know-box row">
-          <div class="col-md-12">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <div class="col-md-1">
               <img class="know-arrow-left" src="images/content/know-arrow-left.png">
             </div>
@@ -281,16 +339,19 @@
     </div>
   </div>
 </div>
+</div>
+</div>
 
   <!-- Footer -->
-  <div class="row footer">
-    <div class="container">
-      <div class="col-md-2"> <font color="77777">
-        Tutorials
-        Support
-        Blog
-        </font>
-      </div>
+    <footer class="site-footer">
+        <div class="row bottom-bar">
+          <div class="container col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="col-md-2"> <font color="77777">
+              Tutorials
+              Support
+              Blog
+            </font>
+            </div>
       <div class="col-md-6">
         <p> <font color="2498f2"> <b> Ariel Winter </b> </font> likes your <font color="2498f2"> <b> Win A Cooper Sweepstakes </b> </font> Promotion </p>
       </div>
@@ -307,6 +368,8 @@
       </div>
     </div>
   </div>
+</footer>
+
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
