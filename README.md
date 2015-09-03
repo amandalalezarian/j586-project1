@@ -1,2 +1,2 @@
 # j586-project1
-50% left to go.
+I did the best I could
